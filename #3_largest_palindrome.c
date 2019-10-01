@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int reverse_num(int num) 
+int reverse_num(int num) //This function return the reverse of a number 
 {
     int ret = 0, value = 1, temp = 0;
     temp = num;
@@ -23,7 +23,7 @@ int reverse_num(int num)
     return ret;
 }
 
-int check_palindrome(int num)
+int check_palindrome(int num)//This function checks whether it is a palindrome or not
 {
     if(num==reverse_num(num))
         return 1;
@@ -42,7 +42,7 @@ int main(void)
             temp = i * j;
             if(check_palindrome(temp))
             {
-                if(temp>largest)
+                if(temp>largest)//Compares the palindromes to find the largest of them
                 {
                     largest = temp;
                     
