@@ -11,6 +11,6 @@ int main() {
         if (sum%2==0)
             evensum+=sum;
     }
-    printf("%d \n",evensum);
+    printf("%d \n",evensum);//this prints the sum pf even fibanocci numbers 
     return 0;
 }
